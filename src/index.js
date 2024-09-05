@@ -64,4 +64,16 @@ function filtrarPorCategoria(categoria) {
     });
 }
 
-// Ejemplo de uso: filtrarPorCategoria('matemáticas');
+// Función para guardar flashcards en el almacenamiento local
+function guardarFlashcards() {
+    localStorage.setItem('flashcards', JSON.stringify(flashcards));
+}
+
+// Función para cargar flashcards desde el almacenamiento local
+function cargarFlashcards() {
+    const flashcardsGuardadas = localStorage.getItem('flashcards');
+    if (flashcardsGuardadas) {
+        flashcards = JSON.parse(flashcardsGuardadas);
+        mostrarFlashcards();
+    }
+}
