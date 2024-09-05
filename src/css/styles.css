@@ -3,13 +3,13 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 20px;
-    background-color: #121212;
-    color: #e0e0e0;
+    background-color: #121212; /* Fondo oscuro para el cuerpo */
+    color: #e0e0e0; /* Texto claro para buen contraste */
 }
 
 header {
-    background-color: #1e1e1e;
-    color: #fff;
+    background-color: #1e1e1e; /* Fondo oscuro para el encabezado */
+    color: #fff; /* Texto blanco para el encabezado */
     text-align: center;
     padding: 1rem;
 }
@@ -17,15 +17,15 @@ header {
 main {
     max-width: 800px;
     margin: 20px auto;
-    background-color: #1e1e1e;
+    background-color: #1e1e1e; /* Fondo oscuro para el área principal */
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Sombra suave para destacar el contenedor */
 }
 
 h1, h2 {
     margin-bottom: 20px;
-    color: #bb86fc;
+    color: #bb86fc; /* Color morado claro para los encabezados */
 }
 
 form {
@@ -37,21 +37,22 @@ input, button {
     margin-bottom: 10px;
     padding: 10px;
     font-size: 16px;
-    background-color: #333;
-    color: #e0e0e0;
-    border: 1px solid #555;
+    background-color: #333; /* Fondo oscuro para campos de entrada y botones */
+    color: #e0e0e0; /* Texto claro para campos de entrada y botones */
+    border: 1px solid #555; /* Borde ligeramente más claro para los campos de entrada */
+    border-radius: 5px; /* Bordes redondeados para un diseño más suave */
 }
 
 button {
-    background-color: #bb86fc;
-    color: #000;
+    background-color: #bb86fc; /* Fondo morado para el botón */
+    color: #000; /* Texto negro para el botón */
     border: none;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s; /* Transición suave para el color de fondo */
 }
 
 button:hover {
-    background-color: #a075db;
+    background-color: #a075db; /* Fondo morado más oscuro en el estado hover */
 }
 
 ul {
@@ -60,8 +61,8 @@ ul {
 }
 
 .flashcard {
-    background-color: #2e2e2e;
-    border: 1px solid #444;
+    background-color: #2e2e2e; /* Fondo aún más oscuro para las tarjetas */
+    border: 1px solid #444; /* Borde más oscuro para las tarjetas */
     margin-bottom: 10px;
     padding: 15px;
     border-radius: 5px;
@@ -69,7 +70,7 @@ ul {
 
 .flashcard h3 {
     margin-top: 0;
-    color: #03dac6;
+    color: #03dac6; /* Color verde aqua para los títulos de las tarjetas */
 }
 
 .flashcard p {
@@ -78,5 +79,5 @@ ul {
 
 .categoria {
     font-style: italic;
-    color: #bb86fc;
+    color: #bb86fc; /* Color morado para las categorías */
 }
