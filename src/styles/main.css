@@ -3,11 +3,12 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: #121212;
+    color: #e0e0e0;
 }
 
 header {
-    background-color: #333;
+    background-color: #1e1e1e;
     color: #fff;
     text-align: center;
     padding: 1rem;
@@ -16,14 +17,15 @@ header {
 main {
     max-width: 800px;
     margin: 20px auto;
-    background-color: #fff;
+    background-color: #1e1e1e;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
 h1, h2 {
     margin-bottom: 20px;
+    color: #bb86fc;
 }
 
 form {
@@ -35,18 +37,21 @@ input, button {
     margin-bottom: 10px;
     padding: 10px;
     font-size: 16px;
+    background-color: #333;
+    color: #e0e0e0;
+    border: 1px solid #555;
 }
 
 button {
-    background-color: #333;
-    color: #fff;
+    background-color: #bb86fc;
+    color: #000;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #555;
+    background-color: #a075db;
 }
 
 ul {
@@ -55,8 +60,8 @@ ul {
 }
 
 .flashcard {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
+    background-color: #2e2e2e;
+    border: 1px solid #444;
     margin-bottom: 10px;
     padding: 15px;
     border-radius: 5px;
@@ -64,6 +69,7 @@ ul {
 
 .flashcard h3 {
     margin-top: 0;
+    color: #03dac6;
 }
 
 .flashcard p {
@@ -72,5 +78,5 @@ ul {
 
 .categoria {
     font-style: italic;
-    color: #666;
+    color: #bb86fc;
 }
