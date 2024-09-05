@@ -1,32 +1,21 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aplicación de Flashcards - Tema Oscuro</title>
-    <link rel="stylesheet" href="src/css/styles.css">
-</head>
-<body>
-    <header>
-        <h1>Aplicación de Flashcards</h1>
-    </header>
-    <main>
-        <section id="crear-flashcard">
-            <h2>Crear nueva flashcard</h2>
-            <form id="formulario-flashcard">
-                <input type="text" id="pregunta" placeholder="Escribe la pregunta" required>
-                <input type="text" id="respuesta" placeholder="Escribe la respuesta" required>
-                <input type="text" id="categoria" placeholder="Categoría (opcional)">
-                <button type="submit">Crear Flashcard</button>
-            </form>
-        </section>
-        <section id="lista-flashcards">
-            <h2>Flashcards creadas</h2>
-            <ul id="flashcards">
-                <!-- Aquí se agregarán las flashcards dinámicamente -->
-            </ul>
-        </section>
-    </main>
-    <script src="src/js/index.js"></script>
-</body>
-</html>
+<!-- index.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Study Flashcards</h1>
+  <ul>
+    {% for flashcard in flashcards %}
+      <li>
+        <span>{{ flashcard.question }}</span>
+        <button onclick="revealAnswer(this)">Reveal Answer</button>
+        <span style="display: none;">{{ flashcard.answer }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <script>
+    function revealAnswer(element) {
+      element.nextElementSibling.style.display = 'block';
+    }
+  </script>
+{% endblock %}
